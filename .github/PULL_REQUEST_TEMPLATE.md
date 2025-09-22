@@ -2,10 +2,10 @@
 - What changed & why
 
 ## Testing
-- [ ] pre-commit
-- [ ] terraform validate / tflint
-- [ ] tfsec / Checkov
-- [ ] terratest (if applicable)
+- [ ] pre-commit (code formatting and basic checks)
+- [ ] terraform validate / tflint (syntax validation and linting)
+- [ ] tfsec / Checkov (security checks)
+- [ ] terratest (integration tests, if applicable)
 
 ## Docs
 - [ ] README / terraform-docs updated
