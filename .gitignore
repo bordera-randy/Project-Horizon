@@ -35,3 +35,23 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Ignore terraform lock files for now (will be managed per environment)
+.terraform.lock.hcl
+
+# Ignore terraform directories
+.terraform/
+
+# Ignore temporary files
+*.tmp
+*.bak
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
