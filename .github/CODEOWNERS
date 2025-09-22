@@ -1,0 +1,54 @@
+# CODEOWNERS for Project Horizon (Azure Landing Zone – Terraform Module)
+# Place this file in .github/CODEOWNERS for best compatibility.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Defaults
+# ─────────────────────────────────────────────────────────────────────────────
+# Global default owner for all files:
+*                                   @bordera-randy
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Terraform core
+# ─────────────────────────────────────────────────────────────────────────────
+# Modules (authoritative owners of the reusable module code)
+modules/**                          @bordera-randy
+
+# Example stacks / environments (reference implementations)
+examples/**                         @bordera-randy
+env/**                              @bordera-randy
+
+# Provider/policy assets (if you keep custom policy defs/sets here)
+policies/**                         @bordera-randy
+**/*.policy.json                    @bordera-randy
+**/*.policyset.json                 @bordera-randy
+
+# Common Terraform file types
+**/*.tf                             @bordera-randy
+**/*.tfvars                         @bordera-randy
+**/*.tfvars.json                    @bordera-randy
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CI/CD & Repo Automation
+# ─────────────────────────────────────────────────────────────────────────────
+.github/workflows/**                @bordera-randy
+.github/**                          @bordera-randy
+.pre-commit-config.yaml             @bordera-randy
+tflint.hcl                          @bordera-randy
+.terraform-docs.yml                 @bordera-randy
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Docs
+# ─────────────────────────────────────────────────────────────────────────────
+docs/**                             @bordera-randy
+README.md                           @bordera-randy
+CHANGELOG.md                        @bordera-randy
+SECURITY.md                         @bordera-randy
+CONTRIBUTING.md                     @bordera-randy
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Tests & Tooling
+# ─────────────────────────────────────────────────────────────────────────────
+test/**                             @bordera-randy
+**/*_test.go                        @bordera-randy
+scripts/**                          @bordera-randy
